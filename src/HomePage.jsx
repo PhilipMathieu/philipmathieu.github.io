@@ -8,7 +8,7 @@ const HomePage = () => {
   return (
     <>
       <Header />
-      <ProjectSlideshow />
+      {/* <ProjectSlideshow /> */}
       <AboutMe />
       <LatestListing />
     </>

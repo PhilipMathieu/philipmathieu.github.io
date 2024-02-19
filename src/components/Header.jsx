@@ -4,7 +4,7 @@ import { NavLink } from "react-dom";
 const Header = () => {
   return (
     <>
-      <div className="navbar bg-base-100">
+      <div className="navbar bg-base-100 p-0">
         <div className="navbar-start">
           {/* Mobile Menu */}
           <div className="dropdown">
@@ -59,10 +59,13 @@ const Header = () => {
         {/* Desktop Menu */}
         <div className="navbar-center hidden lg:flex">
           <ul className="menu menu-horizontal px-1">
-            <li>
+            <li className="border-2 border-transparent hover:border-black">
               <a>Photo/Video</a>
             </li>
-            <li tabIndex={0}>
+            <li
+              tabIndex={0}
+              className="border-2 border-transparent hover:border-black"
+            >
               <details>
                 <summary>Programming Projects</summary>
                 <ul className="p-2">
@@ -75,8 +78,8 @@ const Header = () => {
                 </ul>
               </details>
             </li>
-            <li>
-              <a>Blog</a>
+            <li className="border-2 border-transparent hover:border-black">
+              <a href="https://blog.philipmathieu.com">Blog</a>
             </li>
           </ul>
         </div>
